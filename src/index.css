@@ -1,13 +1,119 @@
-body {
+:root{
+  --maincolor:#0aad0a;
+  --lighcolor:#f0f2f3;
+  --ratingcolor:#ffc908;
+  --green:#22db14
+}
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+/* .navbar{
+  z-index: 5000;
+  margin-top: 0;
+} */
+.maincolor{
+  color: var(--maincolor) !important;
+}
+.lighcolor{
+  color: var(--lighcolor);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ratingcolor{
+  color: var(--ratingcolor);
 }
+.bg-maincolor{
+  background-color: var(--maincolor) !important; 
+}
+Link{
+  text-decoration: none;
+  color: black;
+}
+a a:hover{
+  text-decoration: none;
+}
+
+.colproduct:hover{
+  /* box-shadow:2px 5px #0aad0a; */
+  box-shadow: 1px 1px 10px 0.5px var(--maincolor);
+  border-radius: 5px;
+  transition: all 0.6s;
+  cursor: pointer;
+  text-decoration:none !important ;
+  
+
+}
+.btnadd{
+  position: absolute;
+  top:130px;
+ 
+}
+.colproduct:hover .btnadd{
+  top: 0;
+  transition: all 0.5s;
+  background-color: var(--green) !important; 
+  /* opacity: 100%; */
+}
+.colproduct p,a,h6,i{
+  text-decoration: none !important; 
+  
+}
+.btndetails{
+   background-color: var(--green) !important; 
+}
+
+
+  .loading{
+  z-index:99999;
+  height: 100vh;
+  background-color: #fff;
+  }
+  
+  .cursor-pointer{
+    cursor: pointer;
+  }
+  .bgligthcolor{
+    background-color: #F8F9FA;
+  }
+  .icon-red{
+    color: #DC3545;
+  }
+  .btn:hover{
+    background-color: var(--maincolor) !important;
+    color: #fff !important;
+  }
+  .btn-outline-success{
+    border-color: #0aad0a !important;
+  }
+  btnl:hover{
+    background-color: transparent !important;
+  }
+  .brand:hover{
+    box-shadow: 1px 1px 10px 0.5px var(--maincolor);
+    border-radius: 5px;
+    transition: all 0.6s;
+    
+    
+    
+  }
+  .brand{
+    border:solid 0.1px #eee;
+  }
+  .super{
+    background-color: #0aad0a;
+  }
+  .categoryitem{
+    border :1px solid #eee;
+    /* background-color: #DC3545; */
+
+  }
+  .categoryitem:hover img{
+    transform: scale(1.2)
+  }
+  
+  .categoryimg img {
+    height: 300px;
+    transition-property: scale();
+    transition-duration: 1s;
+
+  }

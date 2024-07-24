@@ -1,0 +1,7 @@
+.showw{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translatey(-50%);
+    color: var(--maincolor); 
+}
